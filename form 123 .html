@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <title> Form dang ki </title>
+    <meta charset="utf-8"></meta>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        table {
+            min-width: 500px;
+            border: 1px solid lightgrey;
+        }
+        
+        label {
+            color: #999999;
+            font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+            top: 10px;
+            right: auto;
+            bottom: 0px;
+            position: absolute;
+            left: 10px;
+            -webkit-transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+            -moz-transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+            transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+            line-height: 44px;
+            margin: 0;
+        }
+        
+        label em {
+            color: red;
+        }
+        
+        input.input-text {
+            border-width: 0;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: lightgrey;
+            padding-left: 0;
+            padding-right: 0;
+            font: 500 12px/1.55 PT Sans, Helvetica Neue, Verdana, Arial, sans-serif;
+            width: 100%;
+            height: 40px !important;
+            color: #999999;
+        }
+        
+        input.input-text:focus {
+            outline-color: transparent;
+            border-width: 0;
+            border-bottom-width: 1px;
+            border-bottom-color: black;
+        }
+        
+        .lengend {
+            font: 500 14px/1.35 PT Sans, Helvetica Neue, Verdana, Arial, sans-serif;
+            color: #282828;
+        }
+        
+        .input-box {
+            padding-top: 2px;
+        }
+        
+        button {
+            border-color: #282828;
+            background: #282828;
+            color: white;
+            font: 600 14px/1.35 PT Sans, Helvetica Neue, Verdana, Arial, sans-serif;
+            width: 500px;
+            height: 40px;
+        }
+        
+        button:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#firstname").focus(function() {
+                $(".required1").animate({
+                    left: '400px',
+                    opacity: '0.4',
+                }, "fast");
+            })
+            
+            $("#firstname").focusout(function() {
+                $(".required1").animate({
+                    left: '30px',
+                    opacity: '1',
+                }, "fast");
+            })
+            
+
+            $("#lastname").focus(function() {
+                $(".required2").animate({
+                    left: '400px',
+                    opacity: '0.4',
+                }, "fast");
+            })
+            $("#email_address").focus(function() {
+                $(".required3").animate({
+                    left: '400px',
+                    opacity: '0.4',
+                }, "fast");
+            })
+            $("#password").focus(function() {
+                $(".required4").animate({
+                    left: '400px',
+                    opacity: '0.4',
+                }, "fast");
+            })
+            $("#npassword").focus(function() {
+                $(".required5").animate({
+                    left: '400px',
+                    opacity: '0.4',
+                }, "fast");
+            })
+        })
+    </script>
+    <script>
+            function validateForm() {
+                var x = document.forms["myForm"]["firstname"].value;
+                if (x == "") {
+                    alert("BẠN HÃY NHẬP HỌ ");
+                    return false;
+                }
+                var x = document.forms["myForm"]["lastname"].value;
+                if (x == "") {
+                    alert("BẠN HÃY NHẬP TÊN ");
+                    return false;
+                }
+                var x = document.forms["myForm"]["email"].value;
+                if (x == "") {
+                    alert("BẠN HÃY NHẬP EMAIL ");
+                    return false;
+                }
+                var x = document.forms["myForm"]["password"].value;
+                if (x == "") {
+                    alert("BẠN HÃY NHẬP PASSWORD ");
+                    return false;
+                }
+                var x = document.forms["myForm"]["npassword"].value;
+                if (x == "") {
+                    alert("BẠN HÃY NHẬP LẠI PASSWORD ");
+                    return false;
+                }
+            }
+            </script>
+
+</head>
+
+<body>
+        <form name="myForm" action="thong_tin_dang_nhap123.html"
+        onsubmit="return validateForm()" method="post">
+    <h1 align="center"> ĐĂNG KÍ TÀI KHOẢN </h1>
+    <table cellpadding="10" cellspacing="1" align="center">
+        <tr>
+            <td>
+                <h2 class="lengend">THÔNG TIN CÁ NHÂN</h2>
+            </td>
+        </tr>
+        <tr>
+            <td style="position : relative">
+                <label for="firstname" class="required1">Họ<em>*</em></label>
+
+                <input type="text" id="firstname" name="firstname" value title="Họ" maxlength="255" class="input-text required-entry">
+            </td>
+        </tr>
+        <tr>
+            <td style="position : relative">
+                <label for="lastname" class="required2">Tên<em>*</em></label>
+                <input type="text" id="lastname" name="lastname" value="" title="Tên" maxlength="255" class="input-text required-entry">
+            </td>
+        </tr>
+        <tr>
+            <td style="position : relative">
+                <label for="email_address" class="required3">Địa chỉ Email<em>*</em></label>
+                <input type="text" name="email" id="email_address" value="" title="Địa chỉ email" class="input-text validate-email required-entry">
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                <h2 class="lengend">THÔNG TIN ĐĂNG NHẬP</h2>
+            </td>
+
+        </tr>
+        <tr>
+            <td style="position : relative">
+                <label for="password" class="required4">Mật Khẩu<em>*</em></label>
+                <input type="password" name="password" value="" id="password" title="Mật khẩu" class="input-text required-entry">
+            </td>
+        </tr>
+        <tr>
+            <td style="position : relative">
+                <label for="password" class="required5">Nhập Mật Khẩu<em>*</em></label>
+                <input type="password" name="npassword" value="" id="npassword" title="hập Lại Mật khẩu" class="input-text required-entry ">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button align="center"> CHẤP NHẬN  </button>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+
+</html>

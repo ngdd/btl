@@ -1,0 +1,77 @@
+.col-sm-3, .col-sm-9{
+    position: relative;
+    min-height: 1px;
+}
+.col-main{
+    width: 78%;
+    padding: 20px 0;
+    left: 20%;
+    float: left;
+    right: auto;
+}
+.col-wrapper-main{
+    background-color: transparent;
+    padding: 0px;
+    box-shadow: none;
+    -webkit-border-radius: 0px;
+    border: 0;
+}
+.my-account {
+    padding: 20px;
+    background: white;
+}
+a {
+    background-color: transparent;
+}
+.map-popup {
+
+    text-align: left;
+   
+}
+.col-left sidebar{
+    width: 18%;
+    height: 100%;
+    padding: 20px 20px;
+    position: fixed;
+    left: 0;
+    right: auto;
+}
+.my-account-logo{
+    margin: -20px -20px 20px;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    width: calc(100% + 40px);
+    display: block;
+}
+.box-content {
+    float: left;
+    width: 100%;
+}
+.current{
+    border-top: 1px solid #0e0e0e;
+}
+.block-content li a{
+    color: white;
+    border-bottom: 1px solid #0e0e0e;
+    background: #424242;
+}
+.block-content li:first-child strong{
+    color: white;
+    border-top: 1px solid #424242;
+    background: #424242;
+}
+.block-content{
+    padding: 0px 0px 15px;
+}
+.block block-account{
+    background-color: transparent;
+    padding: 0px;
+    box-shadow: none;
+    -webkit-border-radius: 0px;
+    border: 0;
+}
+.block-title{
+    border: 0;
+
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" href="google.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <style>
+      .title{
+           border-width: 1px;
+   border-style: solid;
+  border-color: lightblue;
+  height:100px;
+  font-size: 1cm;
+  background-color: gray;
+      }
+      .qc{
+          float : right;
+          width : 30%;
+          margin-top: 2cm;
+          margin-right:4cm;
+      }
+      .video{
+          float : left;
+          width : 40%;
+          margin-left: 1.5cm;
+      }
+      .maincontent{
+          width : 100%;
+          margin-top : 0cm;
+         
+      }
+      .content1{
+          width : 100%;
+          margin-top: 0cm;
+         text-align: center;
+         
+      }
+      .leftct1{
+          float:left;
+          width : 25%;
+          text-align: left ;
+          margin-left:3cm;
+          
+      }
+      .centerct1{
+        float : left;
+          width : 25%; 
+          text-align: left;
+        
+          margin-left: 2cm;
+      }
+      .rightct1{
+    
+          width : 25%;  
+          text-align: left;
+          float: left;
+          margin-left: 2cm;
+      }
+      .img{
+          width : 300px;
+          height : 300px;
+          margin-top: 1cm;
+          border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+      }
+      .title1{
+          padding-top:0.5cm;
+          padding-bottom: 0.5cm;
+          padding-left: 15cm;
+      }
+     
+     .titlect{
+         margin-top: 20cm;
+         text-align: center;
+        
+     }
+     .titlect2{
+         margin-top:30cm;
+         text-align: center;
+         
+     }
+     a{
+         color : black;
+     }
+     a:hover{
+         text-decoration-line: none;
+         color: olivedrab;
+     }
+     p{
+         color :darkgray;
+         text-align: justify;
+     }
+     .content2{
+          width : 100%;
+          margin-top: 1cm;
+         text-align: center;
+       padding-top: 0.5cm;
+      
+  
+        
+      }
+      h3{
+        text-align: left;   
+      }
+      .img1{
+          width : 500px;
+          height : 400px;
+      }
+      .header {
+    background-color:pink;
+    color:black;
+    
+    padding: 50px;
+
+    border-bottom: black;
+    display: block;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+display: block;
+}
+
+li {
+    float: right;
+}
+
+li a, .dropbtn1 {
+    display: inline-block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown1:hover .dropbtn1 {
+    background-color: tomato;
+}
+
+li.dropdown1 {
+    display: inline-block;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content1 a:hover {background-color:pink}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+.column3 {
+    float: left;
+    width: 50%;
+    padding: 50px;
+}
+@media screen and (max-width:600px) {
+    .column3 {
+        width: 100%;
+    }
+}
+/* Clear floats after the columns */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-left: 20%;
+}
+  </style>
+      
+  
+</head>
+<body>
+        <div class="header" style="width: 100%;  background-repeat: no-repeat;padding-top: 0px;padding-bottom: 70px;">
+              
+                <ul  style="margin-left: 200px;margin-right: 0px;float: right;overflow: hidden;background-color:none;display: block;color: white;text-align: right;">
+                        <li> <a href="giohang.html" style="color:white">
+                                <span class="glyphicon glyphicon-shopping-cart"> </span> Giỏ hàng
+                              </a></li>
+                            <li>   <a href="form 123 .html" style="color:white">Đăng ký</a></li>
+                            <li>   <a href="dang_nhap.html"  style="color:white">Đăng nhập</a></li>
+                    </ul>
+                <p align="left" style="color: white;font-size: 100px;margin-left: 1%;font-family: Brush Script MT; text-align: left;">Nice to wear</p>
+
+        <ul  style="margin-left: 10%;margin-right: 150px;float: left;overflow: hidden;background-color:none;display: block;color: black;border-bottom: double;">
+                <li class="dropdown1">
+                        <a href="blog.html" class="dropbtn1">BLOG</a>
+                        <div class="dropdown-content1">
+                         
+                        </div>
+                      </li>
+                <li class="dropdown1">
+                        <a href="lookbook.html" class="dropbtn1">LOOKBOOK</a>
+                        <div class="dropdown-content1">
+                        
+                        </div>
+                      </li>
+                <li class="dropdown1">
+                        <a href="" class="dropbtn1">NEW ARRIVAL</a>
+                        <div class="dropdown-content1">
+                          <a href="Aonew.html">Áo</a>
+                          <a href="Quannew.html">Váy</a>
+                          <a href="Vaynew.html">Quần</a>
+                        </div>
+                      </li>
+            <li class="dropdown1">
+                        <a href="MULTIPACKS-SETS.html" class="dropbtn1">MULTIPACKS-SETS</a>
+                        <div class="dropdown-content1">
+                          
+                          
+                        </div>
+                      </li>
+                <li class="dropdown1">
+                        <a href="quan.html" class="dropbtn1">QUẦN</a>
+                        <div class="dropdown-content1">
+                          <a href="quanau.html">Quần Âu</a>
+                          <a href="quanbaggy.html">Quần Baggy</a>
+                          <a href="quansooc.html">Quần Sooc</a>
+                        </div>
+                      </li>
+                <li class="dropdown1">
+                        <a href="chanvay1.html" class="dropbtn1">CHÂN VÁY</a>
+                        <div class="dropdown-content1">
+                          
+                        </div>
+                      </li>
+                <li class="dropdown1">
+                        <a href="vay.html" class="dropbtn1">VÁY</a>
+                        <div class="dropdown-content1">
+                          <a href="vay-dam.html">Đầm</a>
+                          <a href="vay-yem.html">Yếm</a>
+                          <a href="vay-sanphammoi.html">Sản phẩm mới</a>
+                        </div>
+                      </li>
+                <li class="dropdown1">
+                        <a href="ao.html" class="dropbtn1">ÁO</a>
+                        <div class="dropdown-content1">
+                          <a href="ao-aosomi.html">Áo sơ mi</a>
+                          <a href="ao-aothun-ni.html">Áo thun - Nỉ</a>
+                          <a href="ao-sanphammoi.html">Sản phẩm mới</a>
+                        </div>
+                      </li>
+                <li class="dropdown1">
+                  <a href="Trangchu.html" class="dropbtn1"><i class="material-icons" style="font-size:20px">home</i></a>
+                  <div class="dropdown-content1">
+                  </div>
+                </li>
+                
+              </ul>
+              </div>
+
+    <div class= top content >
+        <div class= video>
+                <video width="500" height="500" controls>
+                        <source src="video92.mp4" type="video/mp4">
+            </video> <br>
+            Ưu đãi mỗi tuần - giảm giá 20% toàn bộ sản phẩm - Miễn phí ship toàn quốc - Duy nhất 02 ngày 13->14/03.
+            mặc đẹp mỗi ngày cùng 92wear.vn 
+            <button style="background-color: orange; height: 30px ; width: 90px ;" > Mua ngay</button>
+        </div>
+        <div class = qc>
+            <a href = "#"><img class = img1 src = "images\qc.jpg"></a>
+           <a href="#"> <p>  BÙA SALE - ĐẾN NGAY ĐIIII 🆘🆘 ▶ SALE 30% OFF - 30.000 SẢN PHẨM HÈ <br> ◀ 🎋Mua hay không mua...không mua hay mua nói một lời thôi!! 😎😎😎  <br>⚠ 92WEAR có chương trình #BÙA_SALE - #SALE_30% OFF - #30000_SẢN_PHẨM_HÈ đấy, mua ngay đi, các nàng ơiiii 😍😍 ✨ <br> Phân vân gì [...]</p>
+</a>
+        </div>
+    </div>
+
+    
+    <div class = maincontent >    
+<div class= content1 >
+    <div class = titlect>
+        <h2  >  PHỐI ĐỒ CÙNG 92WEAR   </h2> 
+        </div>
+    <div class = leftct1>
+        <img class = img src = "images\leftct1.jpg">
+        <a href =""><h3> THỜI ĐIỂM THÍCH HỢP ĐỂ KẾT HỢP CHÂN VÁY ĐÂY RỒI,CÙNG XEM QUA 11 CÁCH KẾT HỢP DƯỚI ĐÂY NHÉ</h3></a>
+        <p>Những ý tưởng dưới đây sẽ là gợi ý tuyệt hay dành cho những nàng mê chân váy mà chưa biết cách diện sao cho thật thanh lịch và "trưởng thành" nhất. Chân váy mang [...] </p>
+        
+        <img class = img src = "images\leftct2.jpg">
+        <a href =""><h3> BÍ KÍP PHỐI ĐỒ KHI ĐI DU LỊCH ĐÀ LẠT CHO NÀNG THA HỒ SỐNG ẢO</h3></a>
+        <p>Đầu năm mới là thời điểm cực phù hợp để nàng “xách ba lô lên và đi”. Đây là mùa lễ hội lớn nhất trong năm, đặc biệt đây là mùa mà Đà Lạt duyên [...] </p>
+    </div>
+    <div class = centerct1>
+            <img class = img  src = "images\ctct1.jpg">
+            <a href =""><h3> COLOR OF SUNSHINE </h3></a>
+            <p>Ánh nắng của mùa xuân là ánh nắng dịu dàng và đẹp đẽ nhất, không vàng rực rỡ như nắng hạ nhưng không hề hiu hắt đìu hiu nắng thu, ánh nắng trong veo dịu [...] </p>
+           <br> <br> <br> <br> <br>
+            <img class = img width = "600px" src = "images\centerct2.jpg">
+            <a href =""><h3> NHỮNG MÓN ĐỒ KHÔNG THỂ THIẾU NĂM 2018</h3></a>
+            <p> Năm mới đến rồi, bạn đã có những món đồ này chưa? Nếu chưa, sắm ngay kẻo lỡ nhé!   Áo kẻ ngang Áo kẻ ngang luôn là item không thể không có trong tủ [...]</p>
+        </div>
+        <div class = rightct1>
+                <img class = img  src = "images\rightct1.jpg">
+                <a href =""><h3> 13 SET ĐỒ BIẾN HÓA CÙNG CHIẾC ÁO PHÔNG TỪ NHỮNG COMBO QUÁ ĐỖI QUEN THUỘC </h3></a>
+                <p> Áo phông dài tay thuộc top những món đồ đơn giản nhưng lại có độ phủ sóng mạnh mẽ đối với phong cách của phái đẹp. Không cá tính hay nổi bật như những thiết [...]</p>
+                <br>
+                <img class = img src = "images\rightct2.jpg">
+        <a href =""><h3> QUẦN LEANS - MÓN ĐỒ ĐÁNG DIỆN NHẤT MỌI THỜI ĐẠI</h3></a>
+        <p>Quần jeans luôn là món đồ dễ mặc, phù hợp với mọi hoàn cảnh. Tuy nhiên, làm sao để diện jeans thật nổi bật lại không hề đơn giản. 3 tips dưới đây sẽ giúp [...] </p>
+            </div>  
+</div>
+
+
+
+<div class= content2> 
+    <div class = titlect2>
+        <h2 > LƯỚT WEB CÙNG 92WEAR</h2> 
+        </div>
+<div class = leftct1>
+    <img class = img src = "images\ct31.jpg">
+    <a href =""><h3> ĐÓN NGHỈ LỄ - SALE SIÊU DỄ - SALE OF 30% HÀNG HÈ </h3></a>
+    <p> Chương trình khuyến mãi chào mừng Ngày Giải Phóng Miền Nam và Quốc Tế Lao Động 30/04 – 01/05 92WEAR mang tới chương trình sale khuyến mãi cực khủng ĐÓN NGHỈ LỄ – SALE SIÊU [...] </p>
+    <img class = img src = "images\ct34.jpg">
+    <a href =""><h3> HÀ LADE ĐẸP "MÊ HỒN" NHƯ QUÝ CÔ PARIS TRONG LOOKBOOK MỚI CỦA 20AGAIN </h3></a>
+    <p>  Mới đây, khác với những bộ ảnh đẹp trong trẻo, nhẹ nhàng trước đó, lần này Hà Lade bất ngờ xuất hiện đẹp “mê hồn” đầy gợi cảm, quyến rũ như một quý cô Paris [...] </p>
+</div>
+<div class = centerct1>
+        <img class = img  src = "images\ct32.jpg">
+        <a href =""><h3> CÒN GÌ TẾT HƠN KHI MẶC ÁO DÀI VÀO DỊP NĂM MỚI </h3></a>
+        <p>Áo dài không phải là trang phục được diện thường xuyên trong đời sống hàng ngày. Nhưng cứ mỗi dịp Tết đến xuân về, như một thói quen, các mẹ, các chị hay các bạn [...]   </p>
+    
+    </div>
+    <div class = rightct1>
+            <img class = img  src = "images\ct33.jpg">
+            <a href =""><h3> ĐẠI CHIẾN HOA DÂM BỤT : HÒA MINZY MẶC ÁO PHAO ĐỎ , ĐỨC PHÚC LIỀN VI CHỊ NHƯ CHIẾC XÚC XÍCH  </h3></a>
+            <p> Từ sau chương trình "Cặp đôi hoàn hảo: Trữ tình Bolero", Hòa Minzy và Đức Phúc bỗng trở nên vô cùng thân thiết, họ cùng với Erik lập thành gia đình Hoa Dâm Bụt. Nhưng [...] </p>
+        </div>  
+</div>
+
+
+    </div>
+    
+   
+</body>
+</html>

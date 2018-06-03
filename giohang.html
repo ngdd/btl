@@ -1,0 +1,133 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <script src="js/jquery-1.11.1.min.js"></script>
+            <style type="text/css">
+          
+                 
+                @media screen and (max-width: 600px) { 
+                table#cart tbody td .form-control { 
+                
+                display: inline !important;
+                } 
+                 
+                .actions .btn { 
+                width:36%; 
+                margin:1.5em 0;
+                } 
+                 
+                .actions .btn-info { 
+                float:left;
+                } 
+                 
+                .actions .btn-danger { 
+                float:right;
+                } 
+                 
+                table#cart thead {
+                display: none;
+                } 
+                 
+                table#cart tbody td {
+                display: block;
+                padding: .6rem;
+                min-width:320px;
+                } 
+                 
+                table#cart tbody tr td:first-child {
+                background: #333;
+                color: #fff;
+                } 
+                 
+                table#cart tbody td:before { 
+                content: attr(data-th);
+                font-weight: bold; 
+                display: inline-block;
+                width: 8rem;
+                } 
+                 
+                table#cart tfoot td {
+                display:block;
+                } 
+                table#cart tfoot td .btn {
+                display:block;
+                }
+                }</style>
+    </head>
+    <body>
+            <h2 class="text-center">Giỏ hàng của bạn</h2>
+            <div class="container"> 
+             <table id="cart" class="table table-hover table-condensed"> 
+              <thead> 
+               <tr > 
+                <th style="width:50%">Tên sản phẩm</th> 
+                <th style="width:10%">Giá</th> 
+                <th style="width:8%">Số lượng</th> 
+                <th style="width:22%" class="text-center">Thành tiền</th> 
+                <th style="width:10%"> </th> 
+               </tr> 
+              </thead> 
+              <tbody><tr > 
+               <td data-th="Product"> 
+                <div class="row"> 
+                 <div class="col-sm-2 hidden-xs"><img src='images ao/phuong1.jpg' alt="Sản phẩm 1" class="img-responsive" width="100%" >
+                 </div> 
+                 <div class="col-sm-10"> 
+                  <h4 class="nomargin">Áo sơ mi baby doll</h4> 
+                  <p>Áo sơ mi baby doll</p> 
+                 </div> 
+                </div> 
+               </td> 
+               <td data-th="Price">172.800 đ</td> 
+               <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+               </td> 
+               <td data-th="Subtotal" class="text-center">172.800 đ</td> 
+               <td class="actions" data-th="">
+                <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
+                </button> 
+                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>
+                </button>
+               </td> 
+              </tr> 
+              <tr> 
+               <td data-th="Product"> 
+                <div class="row"> 
+                 <div class="col-sm-2 hidden-xs"><img src='images ao/phuong3.jpg' alt="Sản phẩm 1" class="img-responsive" width="100">
+                 </div> 
+                 <div class="col-sm-10"> 
+                  <h4 class="nomargin">Áo sơ mi bèo tầng</h4> 
+                  <p>Áo sơ mi bèo tầng</p> 
+                 </div> 
+                </div> 
+               </td> 
+               <td data-th="Price">172.800 đ</td> 
+               <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+               </td> 
+               <td data-th="Subtotal" class="text-center">172.800 đ</td> 
+               <td class="actions" data-th="">
+                <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
+                </button> 
+                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>
+                </button>
+               </td> 
+              </tr> 
+              </tbody><tfoot> 
+               <tr class="visible-xs"> 
+                <td class="text-center"><strong>Tổng 172.800 đ</strong>
+                </td> 
+               </tr> 
+               <tr> 
+                <td><a href="Trangchu.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
+                </td> 
+                <td colspan="2" class="hidden-xs"> </td> 
+                <td class="hidden-xs text-center"><strong>Tổng tiền 345.600 đ</strong>
+                </td> 
+                <td><a href="Trangchu.html" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+                </td> 
+               </tr> 
+              </tfoot> 
+             </table>
+            </div>
+           
+    </body>
+</html>

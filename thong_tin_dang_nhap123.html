@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>thông tin đăng nhập</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .vertical-menu {
+            background: rgb(22, 22, 22);
+        }
+        
+        .vertical-menu .menu {
+            padding-left: 0px;
+        }
+        
+        .vertical-menu .menu li {
+            list-style: none;
+            height: 50px;
+            border-bottom: 1px solid lightgray;
+            text-align: center;
+        }
+        
+        .vertical-menu .menu li:hover {
+            background: rgb(119, 117, 117);
+        }
+        
+        .vertical-menu .menu li a {
+            text-decoration: none;
+            color: white;
+            line-height: 50px;
+        }
+        
+        .welcome-msg {
+            border: 1px solid #e1e1e1;
+            height: auto;
+        }
+        
+        .welcome-msg p {
+            padding-left: 20px;
+        }
+        
+        .welcome-msg .hello {
+            margin-top: 5px;
+        }
+        
+        .box-account {
+            clear: both;
+            padding: 10px 0px 0;
+            border: 0;
+            margin: 0;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .box-account .box-head {
+            margin-top: 30px;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 7px;
+            margin-bottom: 10px;
+        }
+        /* .box-head h2 {
+            font-size: 15px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 0;
+        } */
+        
+        .col2-set {
+            float: left;
+            width: 100%;
+        }
+        
+        .col2-set .col-1,
+        .col2-set .col-2 {
+            padding-right: 0%;
+            padding-bottom: 0;
+        }
+        
+        .col2-set .col-1 {
+            float: left;
+            width: 49%;
+        }
+        
+        .box {
+            border: none;
+            padding: 0;
+        }
+        
+        .col2-set .col-1 .box-title,
+        .dashboard .col2-set .col-2 .box-title {
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .customer-edit {
+            float: right;
+            margin-right: 20px;
+            color: rgb(148, 143, 143);
+            margin-top: 20px;
+        }
+        
+        .box-title h3,
+        .col-1 h4,
+        .col-2 h4 {
+            font-size: 15px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        
+        .customer-base-info p,
+        .box-content p {
+            font-style: italic;
+        }
+        
+        .change-pass,
+        .manage-address {
+            background: white;
+            border-color: #282828;
+            color: #282828;
+            font: 500 13px/1.35 PT Sans, Helvetica Neue, Verdana, Arial, sans-serif;
+            cursor: pointer;
+            display: inline-block;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            vertical-align: middle;
+            text-transform: uppercase;
+            clear: left;
+            border: 3px solid;
+        }
+        
+        .change-pass:hover,
+        .manage-address:hover {
+            background: black;
+            color: white;
+        }
+        
+        .change-pass a:hover,
+        .manage-address a:hover {
+            color: white;
+        }
+        
+        .change-pass a,
+        .manage-address a {
+            color: #282828;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="vertical-menu">
+                    <ul class="menu">
+                        <li>
+                            <a href="">Tài khoản của tôi</a>
+                        </li>
+                        <li>
+                            <a href="">Chi tiết tài khoản</a>
+                        </li>
+                        <li>
+                            <a href="">Địa chỉ giao nhận</a>
+                        </li>
+                        <li>
+                            <a href="">Lịch sử giao dịch</a>
+                        </li>
+                        <li>
+                            <a href="">Hóa đơn hợp đồng</a>
+                        </li>
+                        <li>
+                            <a href="">Hồ sơ định kỳ</a>
+                        </li>
+                        <li>
+                            <a href="">My Product Reviews</a>
+                        </li>
+                        <li>
+                            <a href="">Tags</a>
+                        </li>
+                        <li>
+                            <a href="">Danh sách yêu thích</a>
+                        </li>
+                        <li>
+                            <a href="">My Applications</a>
+                        </li>
+                        <li>
+                            <a href="">Newsletter Subscriptions</a>
+                        </li>
+                        <li>
+                            <a href="">My Downloadable Products</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="main-account">
+                    <div class="page-title">
+                        <h1>Tài khoản của tôi</h1>
+                    </div>
+                    <div class="welcome-msg">
+                        <p class="hello"><strong>Xin chào, Nguyễn  Nam !</strong></p>
+                        <p>Từ bảng điều khiển tài khoản bạn có thể xem ngắn gọn về các giao dịch vừa thực hiện và cập nhật thông tin tài khoản. Lựa chọn đường dẫn dưới đây để xem hoặc chỉnh sửa thông tin.</p>
+                    </div>
+
+                    <div class="box-account box-info">
+                        <div class="box-head">
+                            <h2>Chi tiết tài khoản</h2>
+                        </div>
+                        <div class="col2-set customer-contact-info">
+                            <div class="col-1">
+                                <div class="box">
+                                    <div class="box-title">
+                                        <h3>Thông tin liên hệ</h3>
+                                        <a class="customer-edit" href="">Chỉnh sửa</a>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="customer-base-info">
+                                            <p>Nguyễn Nam </p>
+                                            <p>namnv081@gmail.com</p>
+                                            <div class="change-pass">
+                                                <a href="">Thay đổi mật khẩu</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="box">
+                                    <div class="box-title">
+                                        <h3>Thư cập nhật</h3>
+                                        <a class="customer-edit" href="">Chỉnh sửa</a>
+                                    </div>
+                                    <div class="box-content">
+                                        <p>
+                                            Hiện tại bạn không đăng ký nhận vào 'General Subscription'. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2-set customer-address-info">
+                            <div class="box">
+                                <div class="box-title">
+                                    <h3 style="font-size : 20px">Địa chỉ giao nhận</h3>
+
+                                </div>
+                                <div class="box-content">
+                                    <div class="col-1">
+                                        <h4>Địa chỉ thanh toán</h4>
+                                        <a class="customer-edit" href="">Chỉnh sửa</a>
+                                        <address>
+                    Bạn hiện tại không đăng ký địa chỉ thanh toán<br><br>
+                    
+                </address>
+                                        <div class="manage-address">
+                                            <a href="">Quản lý địa chỉ</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <h4>Địa chỉ chuyển hàng</h4>
+                                        <a class="customer-edit" href="">Chỉnh sửa</a>
+                                        <address>
+                    Bạn hiện tại không đăng ký địa chỉ nhận hàng                   
+                </address>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
